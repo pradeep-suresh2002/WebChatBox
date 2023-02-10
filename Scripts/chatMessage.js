@@ -11,7 +11,7 @@ let sendMessageValue = document.getElementById("send-message--body");
 let sendMessage = document.getElementById("send-icon");
 let displayUserName = document.getElementsByClassName("user-name")[0];
 
-var socket = io.connect("http://localhost:4000");
+var socket = io.connect("https://titanium-button-moonflower.glitch.me");
 // Event listener for show online users button
 onlineUsers.addEventListener("click",function(){
     // Change the content on click event
