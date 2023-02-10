@@ -1,0 +1,141 @@
+/*Display background image for the entire page*/
+body {
+    background-image: url("../Assets/background-image.jpg");
+}
+/*Style the user login page container */
+#user-login-page {
+    /* display: none; */
+}
+/* Create custom font for app name */
+@font-face {
+    font-family: myFont;
+    src: url("../Assets/custom_font.ttf");
+}
+/* Style user join page entire body */
+#chat-join-page {
+    background-color: #D0C1FF;
+    border-radius: 1px solid black;
+    border-radius: 3vw;
+    height: 35vw;
+    width: 35vw;
+    margin-left: 33vw;
+    margin-top: 7vw;
+    animation: slideUp 3s;
+}
+/* Style app icon */
+.app-icon {
+    height: 7vw;
+    width: 7vw;
+}
+/* Create grid for join page top section */
+.app-details {
+    display: inline-grid;
+    grid-template-columns: 8vw 20vw;
+    margin-left: 4vw;
+    margin-top: 5vw;
+}
+/*Position the app icon */
+.app-icon-container {
+    grid-column: 1/2;
+    animation: slideLeft 4s;
+}
+/* Style the app name */
+.app-name {
+    padding-left: 1vw;
+    font-size: 5vw;
+    color: #0310DA;
+    grid-column: 2/3;
+    margin-top: 1vw;
+    animation: slideLeft 4s;
+    font-family: myFont;
+}
+/* Style the user name input field */
+.user-name {
+    margin-top: 3.5vw;
+    margin-left: 8.5vw;
+    font-size: 1.5vw;
+    text-align: center;
+    height: 3vw;
+    width: 16vw;
+    border: 1px solid black;
+    border-radius: 0.8vw;
+}
+/* Style the room id input field */
+.room-id {
+    margin-top: 3vw;
+    margin-left: 8.5vw;
+    font-size: 1.5vw;
+    text-align: center;
+    height: 3vw;
+    width: 16vw;
+    border: 1px solid black;
+    border-radius: 0.8vw;
+}
+/* Syle the join button */
+.join-button {
+    height: 3vw;
+    width: 4.5vw;
+    font-size: 1.5vw;
+    margin-left: 14vw;
+    margin-top: 3vw;
+    border: 0px solid black;
+    border-radius: 1vw;
+    background-color: #ECF9FF;
+    color: rgb(32, 190, 32);
+}
+/* Create hover effect for join button */
+.join-button:hover {
+    background-color: #0310DA;
+    border: none;
+    color: white;
+}
+/* Add styles for erro message */
+#error-message{
+    position: absolute;
+    font-size: 1.3vw;
+    right: 42.5vw;
+    top:26.3vw;
+    color:red;
+    font-family: cursive;
+}
+
+/* Add animations for displaying join page */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        margin-top: 100%;
+    }
+
+    100% {
+        margin-top: 7vw;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-25%);
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

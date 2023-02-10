@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Create favicon for the webpage-->
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
+    <!--Import required stylesheets-->
+    <link rel="stylesheet" href="./Stylesheets/login.css">
+    <link rel="stylesheet" href="./Stylesheets/chat.css">
+    <link rel="stylesheet" href="./Stylesheets/onlineUsers.css">
+    <link rel="stylesheet" href="./Stylesheets/messages.css">
+    <!--Create title for the webpage-->
+    <title>Chat Box</title>
+</head>
+
+<body>
+    <!--Create a section for login page-->
+    <section id="user-login-page">
+        <!--Login page entire container-->
+        <div id="chat-join-page">
+            <!--Display app name and logo-->
+            <div class="app-details">
+                <div class="app-icon-container">
+                    <img class="app-icon" src="Assets/chat-logo.png" alt="Chat">
+                </div>
+                <div class="app-name">
+                    <span>WeChat</span>
+                </div>
+            </div>
+            <!--Create container for user login details-->
+            <div>
+                <div>
+                    <!--Display username-->
+                    <div>
+                        <input class="user-name" type="text" placeholder="User name" minlength="3" />
+                        <span id ="error-message"></span>
+                    </div>
+                    <!--Display room id-->
+                    <div>
+                        <input class="room-id" type="text" placeholder="Room ID">
+                    </div>
+                    <!--Button for join in chat-->
+                    <div>
+                        <input class="join-button" type="submit" value="Join">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Create a section for user-chat page-->
+    <section id="user-chat-page">
+        <!--Chat page entire container-->
+        <div id="chat-page">
+            <!--Container for top section of chatpage-->
+            <div class="chat-page--appdetails">
+                <!--Display online users button-->
+                <div class="online-users">
+                    <input id="online-users--button" type="button" value="Show online users">
+                </div>
+                <!--Display chat page icon-->
+                <div class="chat-page--iconcontainer">
+                    <img class="chat-page--icon" src="Assets/chat-logo.png" alt="Chat">
+                </div>
+                <!--Display chat page name-->
+                <div class="chat-page--appname">
+                    <span>WeChat</span>
+                </div>
+                <!--Display exit button-->
+                <div class="exit">
+                    <input id="exit-button" type="button" value="Exit">
+                </div>
+            </div>
+            <!--Container for chat messages body-->
+            <div class="chat-messages">
+                <!--Unordered list for display available online users-->
+                <ul class="display-online-users">
+                    <li>Pradeep</li>
+                    <li>Geffrey N</li>
+                    <li>Kavin</li>
+                    <li>Kaiser</li>
+                    <li>Deepika</li>
+                    <li>Sadhana</li>
+                    <li>Sathika</li>
+                    <li>Geffrey N</li>
+                    <li>Kavin</li>
+                    <li>Kaiser</li>
+                    <li>Deepika</li>
+                    <li>Sadhana</li>
+                    <li>Sathika</li>
+                </ul>
+                <!--Container for all input and output messages-->
+                <div class="user-messages">
+                    <!--Container for receiving messages-->
+                    <!--Container for displaying user status of the chat-->
+                </div>
+            </div>
+            <!--Container for user to type and enter the message-->
+            <div id="send-message">
+                <!--Input field for user to type message-->
+                <input id="send-message--body" type="text" placeholder="Enter your message">
+                <!--Send icon to send messages-->
+                <div id="send-icon--container">
+                    <img id="send-icon" src="./Assets/send-icon.png" alt="Send icon">
+                </div>
+            </div>
+        </div>
+    </section>
+     <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script type="module" src="./Scripts/userLogin.js"></script>
+    <script type="module" src="./Scripts/chatMessage.js"></script>
+</body>
+
+</html>

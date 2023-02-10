@@ -1,0 +1,158 @@
+/* Display background image*/
+body {
+    background-image: url("../Assets/background-image.jpg");
+}
+
+/*Display scroll for overflow of entire chat page*/
+#user-chat-page {
+    overflow-x: scroll;
+    display: none;
+}
+
+/*Create a custom font to display app name*/
+@font-face {
+    font-family: myFont;
+    src: url("../Assets/custom_font.ttf");
+}
+
+/*Entire body container for chat page*/
+#chat-page {
+    background-color: #D0C1FF;
+    border-radius: 1px solid black;
+    border-radius: 3vw;
+    height: 43vw;
+    width: 50vw;
+    margin-left: 24vw;
+    margin-top: 2vw;
+}
+
+/*Chat page icon*/
+.chat-page--icon {
+    height: 4vw;
+    width: 4vw;
+    margin-top: 2vw;
+}
+
+/*Chat page top section*/
+.chat-page--appdetails {
+    display: inline-grid;
+    grid-template-columns: 17vw 5vw 15vw 5vw;
+    grid-template-rows: 5vw;
+    margin-top: 0vw;
+    margin-bottom: 1.9vw;
+}
+
+/*Position available online user button*/
+.online-users {
+    margin-left: 0vw;
+    margin-top: 2.5vw;
+    margin-left: 1.5vw;
+}
+
+/*Position the chat page icon*/
+.chat-page--iconcontainer {
+    margin-left: 1.2vw;
+}
+
+/*Style app name*/
+.chat-page--appname {
+    padding-left: 1.5vw;
+    font-size: 4vw;
+    color: #0310DA;
+    margin-top: 1.5vw;
+    font-family: myFont;
+}
+
+/*Style the online users button*/
+#online-users--button {
+    font-size: 1.2vw;
+    height: 3vw;
+    width: 12vw;
+    white-space: normal;
+    border: 0px solid black;
+    border-radius: 1vw;
+    background-color: #ECF9FF;
+    color: rgb(32, 190, 32);
+    font-family: cursive;
+}
+
+/*Create hover effect for show online users button*/
+#online-users--button:hover {
+    background-color: #0310DA;
+    border: none;
+    color: white;
+}
+
+/*Position exit button*/
+.exit {
+    margin-left: 7vw;
+    margin-top: 2.5vw;
+}
+
+/*Style the exit button*/
+#exit-button {
+    height: 3vw;
+    width: 4vw;
+    font-size: 1.2vw;
+    border: 0px solid black;
+    border-radius: 1vw;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    font-family: cursive;
+
+}
+
+/*Create hover effect for exit button*/
+#exit-button:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+/*Create hieght and width for chat message body*/
+.chat-messages {
+    height: 30vw;
+    width: 50vw;
+    background-color: white;
+}
+
+/*Create grid sending message*/
+#send-message {
+    display: inline-grid;
+    grid-template-columns: 40vw 5vw;
+}
+
+/*Style the text box for the user to send message*/
+#send-message--body {
+    height: 3vw;
+    width: 30vw;
+    margin-top: 1vw;
+    margin-left: 7vw;
+    grid-column: 1/2;
+    border: 1px solid black;
+    border-radius: 1vw;
+    padding: 1px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.2vw;
+}
+
+/*Style the placeholder for the user to send message*/
+#send-message--body::placeholder {
+    text-align: center;
+}
+
+/*Position the send icon*/
+#send-icon--container {
+    grid-column: 2/3;
+}
+
+/*Style the send icon image*/
+#send-icon {
+    height: 2vw;
+    margin-top: 1vw;
+    margin-left: 0.2vw;
+    border: 1px solid black;
+    padding: 0.5vw;
+    border-radius: 5vw;
+    background-color: #0310DA;
+    color: white;
+}

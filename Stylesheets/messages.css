@@ -1,0 +1,96 @@
+/* Style messages body section */
+.user-messages {
+    overflow-y: scroll;
+    height: 100%;
+    scroll-behavior: smooth;
+    /* opacity: 0.1; */
+
+}
+
+/* Hide the scrollbar */
+.user-messages::-webkit-scrollbar {
+    display: none;
+}
+
+/* Position the user status container */
+.user-join {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the user status message */
+.user-status {
+    border-radius: 1.1vw;
+    padding: 0.5vw;
+    background-color: rgb(128, 128, 128, 0.5);
+    font-size: 0.8vw;
+    font-family: cursive;
+    margin-bottom: 1vw;
+}
+
+/* Position the user send message */
+.user-send-message {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1vw;
+}
+
+/* Style the user message */
+.send-message--value {
+    border-radius: 2vw 2vw 0vw 2vw;
+    background-color: #D0C1FF;
+    padding: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    max-width: 40%;
+    color: black;
+    font-size: 1.1vw;
+    font-family: cursive;
+}
+
+/* Position the receive message container */
+.receive-message {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1vw;
+}
+
+/* Style the receive message */
+.receive-message--value {
+    border-radius: 2vw 2vw 2vw 0vw;
+    background-color: rgb(3, 16, 218, 0.8);
+    padding: 1vw;
+    max-width: 40%;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    color: rgb(255, 255, 255);
+    font-size: 1.1vw;
+    font-family: cursive;
+}
+/*Position online user name for displaying name*/
+.online-user-name{
+    margin-bottom: 1vw;
+    margin-top: 0.5vw;
+}
+/* Style the online users name */
+.online-user-name span{
+    font-size: 0.7vw;
+    max-width: 40%;
+    padding: 0.5vw;
+    border: 1px dotted #D0C1FF;
+    border-radius: 1vw;
+}
+/* Position the current user name */
+.current-user-name{
+    margin-bottom: 1vw;
+    margin-top: 0.5vw; 
+}
+/* Style the current user name */
+.current-user-name span{
+    font-size: 0.7vw;
+    max-width: 40%;
+    padding: 0.5vw;
+    border: 1px dotted rgb(3, 16, 218, 0.8);
+    border-radius: 1vw;
+}

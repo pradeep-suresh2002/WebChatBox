@@ -1,0 +1,28 @@
+/* Style the online users container */
+.display-online-users {
+    display: none;
+    z-index: 1;
+    font-size: 1.4vw;
+    width: 10vw;
+    max-height: 17vw;
+    position: absolute;
+    overflow-y: scroll;
+    margin-top: 0;
+    background-color: #D0C1FF;
+    margin-left: 1.3vw;
+    margin-top: 1vw;
+    border: 0px solid black;
+    border-radius: 1vw;
+    word-wrap: break-word;
+}
+/* Add padding for the elements of online users */
+.display-online-users li {
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+}
+/* Hide the scroll bar */
+.display-online-users::-webkit-scrollbar {
+    display: none;
+}
