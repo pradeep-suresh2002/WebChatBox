@@ -16,8 +16,7 @@ userName.addEventListener("keypress",function(event){
             roomId.focus();
             optionalValue.innerHTML = "Optional";
         }
-        
-        
+         
 });
 //Add event listener to change the focus of input tabs on enter event
 roomId.addEventListener("keypress",function(event){

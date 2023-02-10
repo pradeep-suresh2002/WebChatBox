@@ -9,7 +9,7 @@ var server = app.listen(4000,function(){
     console.log("Started the server");
 });
 // Link all the assets with index.html
-app.use(express.static('public'));
+app.use(express.static(process.cwd()));
 // Declare the array to show online users
 let onlineUsersArray =[];
 // Initiate the socket
