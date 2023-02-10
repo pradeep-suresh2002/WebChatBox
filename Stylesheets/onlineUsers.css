@@ -5,6 +5,7 @@
     font-size: 1.4vw;
     width: 10vw;
     max-height: 17vw;
+    max-width: 7vw;
     position: absolute;
     overflow-y: scroll;
     margin-top: 0;
@@ -15,12 +16,12 @@
     border-radius: 1vw;
     word-wrap: break-word;
 }
+.display-online-users ul{
+    padding:0.2vw;
+}
 /* Add padding for the elements of online users */
 .display-online-users li {
-    padding-right: 1vw;
-    padding-bottom: 1vw;
-    padding-left: 1vw;
-    padding-top: 0.5vw;
+    padding: 0vw;
 }
 /* Hide the scroll bar */
 .display-online-users::-webkit-scrollbar {

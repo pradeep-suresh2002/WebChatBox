@@ -98,7 +98,15 @@ body {
     color:red;
     font-family: cursive;
 }
-
+/* Add styles for optional message */
+#optional-message{
+    position: absolute;
+    top:32.5vw;
+    right: 47vw;
+    font-family: cursive;
+    font-size: 1.3vw;
+    color:cornflowerblue;
+}
 /* Add animations for displaying join page */
 @keyframes fadeIn {
     0% {
